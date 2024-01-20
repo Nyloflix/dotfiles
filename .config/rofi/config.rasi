@@ -1,0 +1,67 @@
+/* Rofi Config */
+
+/* Color scheme / Font settings */
+* {
+    background:                 #0C0F0AAA;
+    foreground:                 #FFFFFF; /* White text */
+    accent-color:               #33673B; /* Accent color */
+    selected-normal-background: #33673BAA;
+    selected-normal-foreground: #FFFFFF;
+    font:                       "JetBrains Mono Nerd Font 12";
+}
+
+/* Window settings */
+window {
+    background-color:        @background;
+
+    border-radius: 10px;
+}
+
+/* Main box settings (where input and results appear) */
+mainbox {
+    background-color:        @background;
+}
+
+/* List view settings (for the list of options/commands) */
+listview {
+    background-color:        @background;
+    selected-background-color: @selected-normal-background;
+    selected-foreground-color: @selected-normal-foreground;
+
+}
+
+/* Element (each line in the list) settings */
+element {
+    background-color:        @background;
+    text-color:              @foreground;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+element.alternate.normal {
+    background-color: 	     @background;
+    text-color:       	     @foreground;
+}
+
+element selected {
+    background-color:        @selected-normal-background;
+    text-color:              @selected-normal-foreground;
+}
+
+element urgent {
+    background-color:        @background;
+    text-color:              @foreground;
+}
+
+element active {
+    background-color:        @background;
+    text-color:              @foreground;
+}
+
+/* Scrollbar settings */
+scrollbar {
+    handle-color:            @accent-color;
+    handle-width:            10px;
+    padding:                 0px;
+}
+
