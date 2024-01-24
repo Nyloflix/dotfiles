@@ -32,7 +32,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # start rofi in drun mode
-bindsym $mod+d exec rofi -show drun -show-icons
+bindsym $mod+d exec rofi -show drun -show-icons -icon-theme "Tela-circle-black-dark"
 
 # using arrow keys to navigate between windows
 bindsym $mod+Left focus left
